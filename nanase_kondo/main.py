@@ -42,7 +42,7 @@ while True:
         print(word, "を検索しました")
 
     elif choice == "5":
-        print("復習する問題はありません")
+        print("復習する問題はありません。")
 
     elif choice == "6":
         print("システムを終了します")
