@@ -1,4 +1,5 @@
 study_history = []
+goal = ""
 
 while True:
     print("\n=== 基本情報技術者 学習システム ===")
@@ -30,6 +31,7 @@ while True:
 
     elif choice == "3":
         print("\n--- 学習履歴 ---")
+        print("現在のノルマ:", goal)
 
         if len(study_history) == 0:
             print("履歴はありません")
@@ -39,7 +41,11 @@ while True:
 
     elif choice == "4":
         word = input("検索したい用語を入力してください: ")
-        print(word, "を検索しました")
+
+        if word == "OSI":
+            print("OSI参照モデルはネットワーク通信の7層モデルです。")
+        else:
+            print(word, "を検索しました")
 
     elif choice == "5":
         print("復習する問題はありません。")
